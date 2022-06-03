@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  /* background-color: #050404ad; */
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  display: none;
+}
+
+.scroller {
+  overflow-y: scroll;
+  scroll-snap-type: y mandatory;
+}
+
+.scroller section {
+  scroll-snap-align: start;
+}
+
+.invitation {
+  background-image: url('../images/invitation.png');
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  width: 28rem;
+  z-index: 9999;
+}
+
+.heading {
+  background-image: url('../images/heading.png');
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  width: 28rem;
+}
+
+.bride {
+  background-image: url('../images/bride.png');
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  width: 28rem;
+}
+
+.groom {
+  background-image: url('../images/groom.png');
+  background-size: cover;
+  background-color: rgb(0, 0, 0);
+  background-position: center;
+  width: 28rem;
+}
+
+#app {
+  display: flex;
+  justify-content: center;
+}
+
+.muli {
+  font-family: muli;
+}
+
+.muli-light {
+  font-family: muli-light;
+}
+
+.iskry {
+  font-family: iskry;
+}
+
+.sfpro {
+  font-family: sfpro;
+}
+
+@font-face {
+  font-family: 'muli';
+  src: url('../fonts/muli-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'muli-light';
+  src: url('../fonts/muli-light-webfont.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'iskry';
+  src: url('../fonts/iskry.woff') format('woff');
+}
+
+@font-face {
+  font-family: 'sfpro';
+  src: url('../fonts/sf-pro-text-light.woff') format('woff');
+}
